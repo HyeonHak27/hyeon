@@ -1,0 +1,646 @@
+proxies:
+
+
+rule-providers:
+  wavve:
+    type: file
+    behavior: domain
+    path: /koolshare/merlinclash/rules/wavve.yaml
+
+  gemini:
+    type: http
+    behavior: domain
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Gemini/Gemini.yaml"
+    path: /koolshare/merlinclash/rules/gemini.yaml
+    interval: 86400
+
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🚀 手动切换
+    type: select
+    proxies:
+      - 🇭🇰 HKG 01
+      - 🇭🇰 HKG 02
+      - 🇭🇰 HKG 03
+      - 🇭🇰 HKG 04
+      - 🇭🇰 HKG 05
+      - 🇭🇰 HKG 06
+      - 🇭🇰 HKG 07
+      - 🇭🇰 HKG 08
+      - 🇭🇰 HKG 09
+      - 🇭🇰 HKG 10
+      - 🇭🇰 HKG 11
+      - 🇭🇰 HKG 12
+      - 🇭🇰 HKG 13
+      - 🇭🇰 HKG 14
+      - 🇭🇰 HKG 15
+      - 🇭🇰 HKG 16
+      - 🇭🇰 HKG 17
+      - 🇭🇰 HKG 18
+      - 🇭🇰 HKG 19
+      - 🇭🇰 HKG 20
+      - 🇨🇳 TWN 01
+      - 🇨🇳 TWN 02
+      - 🇨🇳 TWN 03
+      - 🇨🇳 TWN 04
+      - 🇨🇳 TWN 05
+      - 🇸🇬 SGP 01
+      - 🇸🇬 SGP 02
+      - 🇸🇬 SGP 03
+      - 🇸🇬 SGP 04
+      - 🇸🇬 SGP 05
+      - 🇸🇬 SGP 06
+      - 🇸🇬 SGP 07
+      - 🇸🇬 SGP 08
+      - 🇸🇬 SGP 09
+      - 🇸🇬 SGP 10
+      - 🇸🇬 SGP 11
+      - 🇸🇬 SGP 12
+      - 🇸🇬 SGP 13
+      - 🇸🇬 SGP 14
+      - 🇸🇬 SGP 15
+      - 🇸🇬 SGP 16
+      - 🇸🇬 SGP 17
+      - 🇸🇬 SGP 18
+      - 🇰🇷 KOR 01
+      - 🇰🇷 KOR 02
+      - 🇯🇵 JPN 01
+      - 🇯🇵 JPN 02
+      - 🇯🇵 JPN 03
+      - 🇯🇵 JPN 04
+      - 🇯🇵 JPN 05
+      - 🇯🇵 JPN 06
+      - 🇯🇵 JPN 07
+      - 🇯🇵 JPN 08
+      - 🇯🇵 JPN 09
+      - 🇯🇵 JPN 10
+      - 🇯🇵 JPN 11
+      - 🇯🇵 JPN 12
+      - 🇯🇵 JPN 13
+      - 🇯🇵 JPN 14
+      - 🇯🇵 JPN 15
+      - 🇯🇵 JPN 16
+      - 🇯🇵 JPN 17
+      - 🇯🇵 JPN 18
+      - 🇺🇸 USA 01
+      - 🇺🇸 USA 02
+      - 🇺🇸 USA 03
+      - 🇺🇸 USA 04
+      - 🇺🇸 USA 05
+      - 🇺🇸 USA 06
+      - 🇺🇸 USA 07
+      - 🇺🇸 USA 08
+      - 🇺🇸 USA 09
+      - 🇺🇸 USA 10
+      - 🇺🇸 USA 11
+      - 🇺🇸 USA 12
+      - 🇺🇸 USA 13
+      - 🇺🇸 USA 14
+      - 🇺🇸 USA 15
+      - 🇺🇸 USA 16
+      - 🇮🇳 IND 01
+      - 🇮🇳 IND 02
+      - 🇦🇺 AUS 01
+      - 🇩🇪 DEU 01
+      - 🇩🇪 DEU 02
+      - 🇩🇪 DEU 03
+      - 🇩🇪 DEU 04
+      - 🇩🇪 DEU 05
+      - 🇩🇪 DEU 06
+      - 🇫🇷 FRA 01
+      - 🇵🇱 POL 01
+      - 🇳🇱 NLD 01
+      - 🇳🇱 NLD 02
+      - 🇳🇱 NLD 03
+      - 🇪🇸 ESP 01
+      - 🇷🇺 RUS 01
+      - 🇷🇺 RUS 02
+      - 🇮🇸 ISL 01
+      - 🇩🇰 DNK 01
+      - 🇨🇦 CAN 01
+      - 🇨🇦 CAN 02
+      - 🇬🇧 GBR 01
+      - 🇬🇧 GBR 02
+      - 🇬🇧 GBR 03
+      - 🇬🇧 GBR 04
+      - TUR 01
+      - TUR 02
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇭🇰 HKG 01
+      - 🇭🇰 HKG 02
+      - 🇭🇰 HKG 03
+      - 🇭🇰 HKG 04
+      - 🇭🇰 HKG 05
+      - 🇭🇰 HKG 06
+      - 🇭🇰 HKG 07
+      - 🇭🇰 HKG 08
+      - 🇭🇰 HKG 09
+      - 🇭🇰 HKG 10
+      - 🇭🇰 HKG 11
+      - 🇭🇰 HKG 12
+      - 🇭🇰 HKG 13
+      - 🇭🇰 HKG 14
+      - 🇭🇰 HKG 15
+      - 🇭🇰 HKG 16
+      - 🇭🇰 HKG 17
+      - 🇭🇰 HKG 18
+      - 🇭🇰 HKG 19
+      - 🇭🇰 HKG 20
+      - 🇨🇳 TWN 01
+      - 🇨🇳 TWN 02
+      - 🇨🇳 TWN 03
+      - 🇨🇳 TWN 04
+      - 🇨🇳 TWN 05
+      - 🇸🇬 SGP 01
+      - 🇸🇬 SGP 02
+      - 🇸🇬 SGP 03
+      - 🇸🇬 SGP 04
+      - 🇸🇬 SGP 05
+      - 🇸🇬 SGP 06
+      - 🇸🇬 SGP 07
+      - 🇸🇬 SGP 08
+      - 🇸🇬 SGP 09
+      - 🇸🇬 SGP 10
+      - 🇸🇬 SGP 11
+      - 🇸🇬 SGP 12
+      - 🇸🇬 SGP 13
+      - 🇸🇬 SGP 14
+      - 🇸🇬 SGP 15
+      - 🇸🇬 SGP 16
+      - 🇸🇬 SGP 17
+      - 🇸🇬 SGP 18
+      - 🇰🇷 KOR 01
+      - 🇰🇷 KOR 02
+      - 🇯🇵 JPN 01
+      - 🇯🇵 JPN 02
+      - 🇯🇵 JPN 03
+      - 🇯🇵 JPN 04
+      - 🇯🇵 JPN 05
+      - 🇯🇵 JPN 06
+      - 🇯🇵 JPN 07
+      - 🇯🇵 JPN 08
+      - 🇯🇵 JPN 09
+      - 🇯🇵 JPN 10
+      - 🇯🇵 JPN 11
+      - 🇯🇵 JPN 12
+      - 🇯🇵 JPN 13
+      - 🇯🇵 JPN 14
+      - 🇯🇵 JPN 15
+      - 🇯🇵 JPN 16
+      - 🇯🇵 JPN 17
+      - 🇯🇵 JPN 18
+      - 🇺🇸 USA 01
+      - 🇺🇸 USA 02
+      - 🇺🇸 USA 03
+      - 🇺🇸 USA 04
+      - 🇺🇸 USA 05
+      - 🇺🇸 USA 06
+      - 🇺🇸 USA 07
+      - 🇺🇸 USA 08
+      - 🇺🇸 USA 09
+      - 🇺🇸 USA 10
+      - 🇺🇸 USA 11
+      - 🇺🇸 USA 12
+      - 🇺🇸 USA 13
+      - 🇺🇸 USA 14
+      - 🇺🇸 USA 15
+      - 🇺🇸 USA 16
+      - 🇮🇳 IND 01
+      - 🇮🇳 IND 02
+      - 🇦🇺 AUS 01
+      - 🇩🇪 DEU 01
+      - 🇩🇪 DEU 02
+      - 🇩🇪 DEU 03
+      - 🇩🇪 DEU 04
+      - 🇩🇪 DEU 05
+      - 🇩🇪 DEU 06
+      - 🇫🇷 FRA 01
+      - 🇵🇱 POL 01
+      - 🇳🇱 NLD 01
+      - 🇳🇱 NLD 02
+      - 🇳🇱 NLD 03
+      - 🇪🇸 ESP 01
+      - 🇷🇺 RUS 01
+      - 🇷🇺 RUS 02
+      - 🇮🇸 ISL 01
+      - 🇩🇰 DNK 01
+      - 🇨🇦 CAN 01
+      - 🇨🇦 CAN 02
+      - 🇬🇧 GBR 01
+      - 🇬🇧 GBR 02
+      - 🇬🇧 GBR 03
+      - 🇬🇧 GBR 04
+      - TUR 01
+      - TUR 02
+  - name: 📲 电报消息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 💬 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 gemini
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎵 TikTok
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 wavve
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 📺 哔哩哔哩
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇸🇬 狮城节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 谷歌直连
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: 🌍 谷歌服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+      - DIRECT
+  - name: Ⓜ️ 国内Bing
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: ☁ iCloud
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 steam直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 国内平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎮 全球平台
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🎯 全球代理
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - 🇺🇲 美国节点
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🛑 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 净化追踪
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - DIRECT
+      - 🇭🇰 香港节点
+      - 🇨🇳 台湾节点
+      - 🇸🇬 狮城节点
+      - 🇯🇵 日本节点
+      - 🇺🇲 美国节点
+      - 🇰🇷 韩国节点
+      - 🚀 手动切换
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇭🇰 HKG 01
+      - 🇭🇰 HKG 02
+      - 🇭🇰 HKG 03
+      - 🇭🇰 HKG 04
+      - 🇭🇰 HKG 05
+      - 🇭🇰 HKG 06
+      - 🇭🇰 HKG 07
+      - 🇭🇰 HKG 08
+      - 🇭🇰 HKG 09
+      - 🇭🇰 HKG 10
+      - 🇭🇰 HKG 11
+      - 🇭🇰 HKG 12
+      - 🇭🇰 HKG 13
+      - 🇭🇰 HKG 14
+      - 🇭🇰 HKG 15
+      - 🇭🇰 HKG 16
+      - 🇭🇰 HKG 17
+      - 🇭🇰 HKG 18
+      - 🇭🇰 HKG 19
+      - 🇭🇰 HKG 20
+  - name: 🇯🇵 日本节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇯🇵 JPN 01
+      - 🇯🇵 JPN 02
+      - 🇯🇵 JPN 03
+      - 🇯🇵 JPN 04
+      - 🇯🇵 JPN 05
+      - 🇯🇵 JPN 06
+      - 🇯🇵 JPN 07
+      - 🇯🇵 JPN 08
+      - 🇯🇵 JPN 09
+      - 🇯🇵 JPN 10
+      - 🇯🇵 JPN 11
+      - 🇯🇵 JPN 12
+      - 🇯🇵 JPN 13
+      - 🇯🇵 JPN 14
+      - 🇯🇵 JPN 15
+      - 🇯🇵 JPN 16
+      - 🇯🇵 JPN 17
+      - 🇯🇵 JPN 18
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - 🇺🇸 USA 01
+      - 🇺🇸 USA 02
+      - 🇺🇸 USA 03
+      - 🇺🇸 USA 04
+      - 🇺🇸 USA 05
+      - 🇺🇸 USA 06
+      - 🇺🇸 USA 07
+      - 🇺🇸 USA 08
+      - 🇺🇸 USA 09
+      - 🇺🇸 USA 10
+      - 🇺🇸 USA 11
+      - 🇺🇸 USA 12
+      - 🇺🇸 USA 13
+      - 🇺🇸 USA 14
+      - 🇺🇸 USA 15
+      - 🇺🇸 USA 16
+      - 🇦🇺 AUS 01
+      - 🇷🇺 RUS 01
+      - 🇷🇺 RUS 02
+  - name: 🇨🇳 台湾节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇨🇳 TWN 01
+      - 🇨🇳 TWN 02
+      - 🇨🇳 TWN 03
+      - 🇨🇳 TWN 04
+      - 🇨🇳 TWN 05
+  - name: 🇸🇬 狮城节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇸🇬 SGP 01
+      - 🇸🇬 SGP 02
+      - 🇸🇬 SGP 03
+      - 🇸🇬 SGP 04
+      - 🇸🇬 SGP 05
+      - 🇸🇬 SGP 06
+      - 🇸🇬 SGP 07
+      - 🇸🇬 SGP 08
+      - 🇸🇬 SGP 09
+      - 🇸🇬 SGP 10
+      - 🇸🇬 SGP 11
+      - 🇸🇬 SGP 12
+      - 🇸🇬 SGP 13
+      - 🇸🇬 SGP 14
+      - 🇸🇬 SGP 15
+      - 🇸🇬 SGP 16
+      - 🇸🇬 SGP 17
+      - 🇸🇬 SGP 18
+  - name: 🇰🇷 韩国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 🇰🇷 KOR 01
+      - 🇰🇷 KOR 02
+
+rules:
+  - RULE-SET,wavve,📺 wavve
+  - RULE-SET,gemini,🌍 gemini
+  - GEOSITE,private,DIRECT
+  - GEOSITE,category-ads-all,🛑 广告拦截
+  - GEOSITE,category-public-tracker,🍃 净化追踪
+  - GEOSITE,telegram,📲 电报消息
+  - GEOSITE,apple@cn,🍎 苹果服务
+  - GEOSITE,icloud@cn,☁ iCloud
+  - GEOSITE,openai,💬 OpenAi
+  - GEOSITE,tiktok,🎵 TikTok
+  - GEOSITE,youtube,📹 油管视频
+  - GEOSITE,bilibili,📺 哔哩哔哩
+  - GEOSITE,netflix,🎥 奈飞视频
+  - GEOSITE,bing@cn,Ⓜ️ 国内Bing
+  - GEOSITE,microsoft@cn,Ⓜ️ 微软服务
+  - GEOSITE,steam@cn,🎮 steam直连
+  - GEOSITE,category-games@cn,🎮 国内平台
+  - GEOSITE,category-games-!cn,🎮 全球平台
+  - GEOSITE,google@cn,🌍 谷歌直连
+  - GEOSITE,google,🌍 谷歌服务
+  - GEOSITE,cn,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,cn,DIRECT
+  - GEOSITE,geolocation-!cn,🎯 全球代理
+  - MATCH,🐟 漏网之鱼
+
+

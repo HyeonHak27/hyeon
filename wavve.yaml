@@ -1,0 +1,7 @@
+# NAME: wavve
+payload:
+  - DOMAIN,pooq.co.kr
+  - DOMAIN,wavve.com
+  - DOMAIN-SUFFIX,pooq.co.kr
+  - DOMAIN-SUFFIX,wavve.com
+  - DOMAIN-KEYWORD,wavve
